@@ -6,6 +6,7 @@ import { PageTwo } from './Components/PageTwo/PageTwo.js';
 import { PageThree } from './Components/PageThree/PageThree.js';
 import { PageFour } from './Components/PageFour/PageFour.js';
 import { PageFive } from './Components/PageFive/PageFive.js';
+import { NotFound } from './Components/NotFound/NotFound.js';
 import './App.scss';
 
 export const App = () => {
@@ -19,6 +20,7 @@ export const App = () => {
           <Route path='pageThree' element={<PageThree/>}/>
           <Route path='pageFour' element={<PageFour/>}/>
           <Route path='pageFive' element={<PageFive/>}/>
+          <Route path='*' element={<NotFound/>}/>
         </Route>
       </Routes>
     </div>

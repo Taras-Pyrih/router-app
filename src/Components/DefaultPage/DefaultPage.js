@@ -1,3 +1,7 @@
 export const DefaultPage = () => {
-  return <h1>DefaultPage</h1>
+  return (
+    <div className='DefaultPage'>
+      <h1>DefaultPage</h1>
+    </div>
+  ); 
 }
