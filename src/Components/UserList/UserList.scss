@@ -1,0 +1,22 @@
+.UserList {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    .listItem {
+      display: flex;
+      padding: 10px;
+      border-top: 1px solid #000000;
+
+      span {
+        width: 1%;
+        flex-grow: 1;
+      }
+    }
+
+    .listItem:last-child {
+      border-bottom: 1px solid #000000;
+    }
+  }
+}
