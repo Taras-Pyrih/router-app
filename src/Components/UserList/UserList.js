@@ -13,7 +13,7 @@ export const UserList = props => {
   });
 
   return (
-    userList.length != 0 &&
+    userList.length > 0 &&
     <div className='UserList'>
       <ul>{userList}</ul>
     </div>

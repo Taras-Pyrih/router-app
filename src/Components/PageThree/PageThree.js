@@ -6,12 +6,10 @@ export const PageThree = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    if (users.length == 0) {
-      fetch('https://jsonplaceholder.typicode.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(array => setUsers(array));
-    }
-  });
+  }, []);
 
   return (
     <div className='PageThree'>
